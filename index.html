@@ -4,11 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Krutika Choudhary Portfolio</title>
+
+  <!-- FontAwesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/5eb2c51ffb.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Krutika</div>
     <ul>
@@ -20,17 +24,22 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- HERO SECTION -->
   <section id="home" class="hero-section">
-    <img src="profile.jpg" class="hero-photo" alt="Profile Photo">
-    <div class="hero-text">
-      <h1>Hello, I’m <br> a Back-end Developer</h1>
-      <p>Fond of building web applications using Java and SQL and learning new backend technologies.</p>
-      <a href="resume.pdf" download class="cta-btn">Download Resume</a>
+    <div class="hero-left">
+      <img src="profile.jpg" class="hero-photo" alt="Profile Photo" />
+      <div class="hero-text">
+        <h1>Hello, I’m <br> a Back-end Developer</h1>
+        <p>Motivated B.Tech graduate with strong knowledge of Java and SQL, focused on building web applications and backend solutions using modern technologies.</p>
+        <a href="resume.pdf" download class="cta-btn">Download Resume</a>
+      </div>
     </div>
+
+    <!-- Right image -->
+    <img src="network.jpg" class="hero-img-right" alt="Network Image" />
   </section>
 
-  <!-- Skill Section -->
+  <!-- SKILL SECTION -->
   <section id="services" class="services-section">
     <h2 class="section-title">Skill-Set</h2>
     <div class="skills-grid">
@@ -57,7 +66,7 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- PROJECTS SECTION -->
   <section id="projects" class="services-section">
     <h2 class="section-title">Projects</h2>
     <div class="skills-grid">
@@ -66,7 +75,6 @@
         <h4>Photography Website</h4>
         <p>Built using HTML, CSS and JavaScript. Blog with photography tips & contact form.</p>
       </div>
-
       <div class="skill-card">
         <i class="fas fa-car"></i>
         <h4>Car Rental System</h4>
@@ -75,7 +83,7 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- CONTACT SECTION -->
   <section id="contact" class="contact-section">
     <h2 class="section-title">Connect with me</h2>
     <form>
@@ -88,12 +96,14 @@
       <a href="mailto:krutikachoudhary2408@gmail.com"><i class="fas fa-envelope"></i></a>
       <a href="https://github.com/Krutika2408" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/krutika-choudhary-0a6576227" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="tel:+910000000000"><i class="fas fa-mobile-alt"></i></a>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 — Made with ❤ by Krutika Choudhary</p>
   </footer>
-
 </body>
 </html>
