@@ -46,7 +46,22 @@ a {
   background: linear-gradient(90deg, #e9464b 0%, #181c32 30%);
   height: 70vh;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 40px;
+}
+
+.hero-left {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.hero-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .hero-text {
@@ -72,23 +87,15 @@ a {
   display: inline-block;
 }
 
-.hero-section {
-  padding: 100px 5%;
-  background: linear-gradient(90deg, #e9464b 0%, #181c32 30%);
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  gap: 40px;
+/* Right side image (blended)  */
+.hero-img-right {
+  width: 400px;
+  height: auto;
+  opacity: 0.25;
+  mix-blend-mode: screen;
 }
 
-.hero-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* SECTIONS  */
+/* SECTION TITLES */
 .section-title {
   font-size: 30px;
   padding-top: 60px;
@@ -97,7 +104,7 @@ a {
   color: #e9464b;
 }
 
-/* SKILLS & PROJECTS */
+/* SKILLS + PROJECTS GRID */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -111,6 +118,13 @@ a {
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for cards  */
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
 }
 
 .skill-card i {
@@ -128,7 +142,7 @@ a {
   color: #b5b6c7;
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 .contact-section {
   padding: 60px 5%;
   background-color: #14172b;
@@ -169,8 +183,16 @@ a {
   color: #e9464b;
   font-size: 24px;
   margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s;
 }
 
+/* Hover effect for icons */
+.contact-links a:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* FOOTER */
 footer {
   padding: 15px;
   text-align: center;
